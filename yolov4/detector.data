@@ -1,0 +1,5 @@
+classes = 2
+train = /home2/ur10/yolov4/train.txt
+valid = /home2/ur10/yolov4/test.txt
+names = /home2/ur10/yolov4/motor_rider.names
+backup = /home2/ur10/yolov4/motor_rider_cl_weights
