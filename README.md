@@ -5,7 +5,7 @@
    
 # Custom Trainig Procedure on the data
 ## *Creating Custom.names file*
-To ensure that our YOLOv4 model can accurately identify the 30 different classes of objects in our dataset, we need to save the labels of these objects in a file called **`custom.names`**, which should be saved inside the **'YOLOV4_Custom'** directory. Each line in this file corresponds to one of the object classes in our dataset. In our case, since we have 30 different classes of plant diseases and healthy plants, the 'custom.names' file should contain one line for each of these 30 classes, so that our model can correctly recognize and classify them.
+To ensure that our YOLOv4 model can accurately identify the 4 different classes of objects in our dataset, we need to save the labels of these objects in a file called **`custom.names`**, which should be saved inside the **'YOLOV4_Custom'** directory. Each line in this file corresponds to one of the object classes in our dataset. In our case, since we have 30 different classes of plant diseases and healthy plants, the 'custom.names' file should contain one line for each of these 30 classes, so that our model can correctly recognize and classify them.
 
 **custom.names**
 ```
@@ -62,10 +62,10 @@ Make a file called `detector.data` in the `YOLOV4_Custom` directory.
 
 ```
 
-classes = 30
+classes = 4
 train = ../train.txt
 valid = ../test.txt
-names = ../custom.names
+names = ../motor-rider.names
 backup = ../backup
 ```
 
